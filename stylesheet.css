@@ -1,0 +1,824 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+    font-family: 'san';
+    width: 100%;
+}
+
+main {
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+@font-face {
+    font-family: "title";
+    src: url(/webfontkit-20210620-164342/hello_honey-webfont.woff) format("woff");
+}
+
+
+#navBar {
+    padding: 20px;
+    display: flex;
+    height: auto;
+    width: 100%;
+    background-color: black;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+}
+
+#logo {
+    display: flex;
+    width: 50%;
+
+}
+
+#logo img {
+    width: 60%;
+    height: auto;
+    margin-top: -10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    object-fit: scale-down;
+}
+
+nav {
+    width: 45%;
+}
+
+#navBar nav ul{
+    display: flex;
+    height: 100%;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+#navBar a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.7vw;
+    align-items: center;
+    justify-content: center;
+    font-family: "Hurricane", cursive;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+#welcomeImage {
+    display: flex;
+    height: 35vw;
+    width: 100%;
+    margin-top: 5vw;
+    z-index: -2;
+    padding: 10vw;
+    padding-top: 0;
+    padding-bottom:0 ;
+   
+}
+
+#welcomeImage img {
+    max-width: 50vw;
+}
+
+#tagline {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    font-size: 1vw;
+    
+}
+
+#tagline1 {
+    font-size: 3.5vw;
+    font-family: 'Indie Flower', cursive;
+}
+
+#tagline h3 {
+    font-family: 'Indie Flower', cursive;
+    font-size: 2.5vw;
+}
+
+#aboutUs {
+    padding: 50px;
+}
+
+#aboutUsContent {
+    height: auto;
+    display: flex;
+    height: auto;
+}
+
+#aboutimgs {
+    width: 250px;
+}
+
+#aboutimgs img {
+    width: 100%;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+#aboutUs h2 {
+    font-size: 6vw;
+    font-family: "Hurricane", cursive;
+  font-weight: 400;
+  font-style: normal;
+    margin-bottom: 50px;
+    
+}
+
+#aboutUs p {
+   margin-left: 70px;
+   font-size: 1.2vw;
+   font-family: 'Indie Flower', cursive;
+}
+
+#weddingInfo {
+    width: 100%;
+    height: auto ;
+    padding-left: 12vw;
+    padding-right: 12vw;
+}
+
+#weddingInfo h2 {
+    font-size: 6vw;
+     font-family: "Hurricane", cursive;
+  font-weight: 400;
+  font-style: normal;
+    text-align: center;
+}
+
+#WImain {
+    margin-top: 2vw;
+    background-image: url(/imgs/venue.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 2vw;
+    color: white;
+    position: relative;
+    border-radius: 5vw;
+}
+
+#WImain p {
+    margin-top: .5vw;
+    margin-bottom: .5vw;
+}
+
+#WImain hr {
+    display: none;
+}
+
+#WILocation {
+    text-align: center;
+    width: 50%;
+    font-size: 1.5vw;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(144, 148, 126, 0.93);
+    border-radius: 5vw 0 0 5vw;
+}
+
+#WILocation:after {
+    content: "";
+    background-color: #FFF;
+    position: absolute;
+    width: 5px;
+    height: 80%;
+    left: 50%;
+    display: block;
+  }
+
+  #WILocation  img {
+      height: auto;
+      width: 40%;
+  }
+
+#WImain h3{
+    font-size: 5vw;
+     font-family: "Hurricane", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #efb0b0;
+    
+}
+
+#WIDate {
+    text-align: center;
+    width: 50%;
+    font-size: 1.5vw;
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(144, 148, 126, 0.93);
+    border-radius:  0 5vw 5vw 0;
+}
+
+#WImain a {
+    text-decoration: none;
+    color: white;
+}
+
+#itinerary {
+    display: flex;
+    flex-direction: column;
+    justify-self: start;
+    text-align: left;
+    width: 75%;
+}
+
+#rsvp {
+    padding: 7vw;
+}
+
+#rsvp h2 {
+    font-size: 8vw;
+    font-family: "Hurricane", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#form {
+    min-width: 100%;
+    margin-top: 3vw;
+    background-color: rgb(210, 216, 186);
+    border-radius: 2vw;
+}
+
+#guests {
+    display: flex;
+}
+
+#guests span {
+    color: #F86969;
+}
+
+#guests label {
+    font-size: 1.5vw;
+}
+
+#guests h3 {
+    text-align: center;
+    font-size: 5vw;
+     font-family: "Hurricane", cursive;
+  font-weight: 400;
+  font-style: normal;
+    margin-bottom: 2vw;
+}
+
+#guests input {
+   height: 2.5vw;
+   font-size: 1.7vw;
+   margin-top: 1vw;
+   margin-bottom: 1vw; 
+} 
+
+#guest1 {
+    margin: 5vw;
+    margin-right: 2.5vw;
+    width:50%; 
+}
+
+#guest2 {
+    margin: 5vw;
+    margin-left: 2.5vw;
+    width: 50%;
+}
+
+#dinnerchoicewrapper {
+    display: flex;
+    margin-bottom: 2vw;
+}
+
+#dinnerchoicewrapper input {
+       margin-right: 2vw;
+       width: 6vw;
+}
+
+#dinnerchoicewrapper  p {
+    margin-top: 1vw;
+    font-size: 1vw;
+}
+
+#dinnerchoicewrapper label {
+    font-size: 1.5vw;
+    text-decoration: underline;
+}
+
+#guests h4 {
+    font-size: 1.5vw;
+    text-align: center;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+
+.checkbox {
+    width: 2.5vw;
+} 
+
+.choice{
+    display: flex;
+}
+
+.submit {
+    margin: 3vw;
+    margin-top: 0;
+    width: 90%;
+    height: 5vw;
+    font-size: 2vw; 
+}
+
+#dclabel {
+    font-size: 1vw;
+}
+
+#guests textarea {
+    width: 100%;
+    margin-top: 2vw;
+    height: 7vw;
+    font-size: 2vw;
+}
+
+#hotel {
+    margin-top: 3vw;
+    margin-bottom: 0vw;
+}
+
+#hotel h3 {
+    font-size: 6vw;
+     font-family: "Hurricane", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#hotel p {
+    margin-top: 2vw;
+    font-size: 2vw;
+}
+
+footer {
+    width: 100%;
+    background-color:black;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 4vw;
+}
+
+.footer {
+    width: 30%;
+    height: auto;
+    padding: 0;
+}
+
+.footer h1 {
+    font-size: 3vw;
+    margin-bottom: 2vw;
+}
+
+.footer p {
+    font-size: 1.8vw;  
+}
+
+footer img {
+    height: 15vw;
+    width: auto;
+    border-radius: 50%;
+}
+
+.thankyou {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+@media only screen and (max-width: 1050px) {
+    #navBar {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2vh;
+    }
+    #aboutUs {
+        padding: 0;
+    }
+    #aboutUs p {
+   margin-left:50px;
+   font-size: 1.8vw;
+   font-family: 'Indie Flower', cursive;
+}
+    #aboutUs h2 {
+        margin-top: 5vw;
+        margin-bottom: 2vw;
+
+    }
+    #logo {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 1%;
+    }
+    #welcomeImage {
+        margin-top: 13vw;
+    }
+    nav {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        
+    }
+
+    #navBar a{
+        font-size: 3.5vw;
+        padding: none;
+    }
+
+    #tagline1 {
+        font-size: 4vw;
+    }
+    
+    #tagline h3 {
+        font-size: 2.5vw;
+    }
+  }
+
+  @media only screen and (max-width: 420px) {
+    #logo {
+        width: 95%;
+        margin-bottom: 3%;
+    }
+    
+    nav {
+        height: auto;
+    }
+
+    #navBar a{
+        font-size: 3.5vw;
+        padding-left: 2vh;
+        padding-left: 2vh;
+    }
+
+    #welcomeImage {
+        height: 770px;
+    }
+
+    #tagline1 {
+        font-size: 40px;
+    }
+    
+    #tagline h3 {
+        font-size: 30px;
+    }
+
+    #aboutUs {
+        padding: 0;
+        margin: 0;
+        height: auto;
+    }
+
+    #aboutUsContent {
+        height: auto;
+        display: flex;
+        position: relative;
+        padding: 5vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url(/imgs/IMG_8979.png);
+        background-size: cover;
+    }
+
+    #aboutimg1 {
+        display: none;
+    }
+
+    #aboutimg3 {
+        display: none;
+    }
+    
+    #aboutimgs img {
+        display: none;
+     
+    }
+    
+    #aboutUs h2 {
+        font-size: 12vw;
+        font-family: 'title';
+        font-weight: 300;
+        margin-bottom: 10vw;
+        margin-top: 10vw;
+        text-align: center;
+    }
+    
+    #aboutUs p {
+     width: 100%;
+     margin: 0;
+     background-color: rgba(111, 111, 111, .8);
+     color: white;
+     padding: 6vw;
+     font-size: 2.4vw;
+     align-self: center;
+     display: block;
+    }
+
+    #weddingInfo {
+        width: 100%;
+        height: auto ;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #weddingInfo h2 {
+        font-size: 12vw;
+        margin-top: 10vw;
+        margin-bottom: 10vw;
+        font-family: 'title';
+        font-weight: 200;
+        text-align: center;
+    }
+
+    #WImain {
+        margin-top: 2vw;
+        background-image: url(/imgs/venue.png);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 2vw;
+        color: white;
+        position: relative;
+        border-radius: 0;
+    }
+
+    #WImain p {
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+    }
+
+    #WILocation {
+        width: 100%;
+        font-size: 4vw;
+        border-radius: 30px 30px 0 0;
+    }
+
+    #WILocation:after {
+        content: '';
+        width: 80%;
+        height: auto;
+        border-bottom: solid 1px #fff;
+        position: relative;
+        left: 0;
+        height: .5vw;
+        top: 100%;
+        z-index: 1;
+        left: auto;
+    }
+        
+    #WImain a {
+        margin-bottom: 4vw;
+    }
+    
+    #WIDate {
+        text-align: center;
+        width: 100%;
+        font-size: 4vw;
+        padding: 2vw;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        list-style: none;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(111, 111, 111, .8);
+        border-radius:  0 0 30px 30px;
+    }
+
+    #WImain h3{
+        font-size: 8vw;
+        margin-bottom: 1vw;
+        
+    }
+
+    #WImain hr {
+        display: block;
+        width: 80%;
+        border: 0;
+        border-top: 1vw solid white;
+        margin: 1em 0;
+        padding: 0;
+    }
+
+    #rsvp {
+        padding: 0; 
+    }
+        
+    #rsvp h2 {
+        font-size: 15vw;
+        margin-top: 8vw;
+        margin-bottom: 8vw;
+        font-family: 'title';
+        font-weight: 200;
+        text-align: center;
+    }
+        
+    #form {
+        min-width: 100%;
+        margin-top: 3vw;
+        background-color: thistle;
+        border-radius: 2vw;
+        padding: 5vw;
+    }
+        
+    #guests {
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+        
+    #guests label {
+        font-size: 5vw;
+    }
+        
+    #guests h3 {
+        text-align: center;
+        font-size: 7vw;
+        margin-bottom: 2vw;
+    }
+        
+    #guests input {
+        height: 9vw;
+        font-size: 6vw;
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+    } 
+
+    #guest1 {
+        margin: 0;
+        margin-right: 0;
+        width:100%;
+    }
+    
+    #guest2 {
+        margin: 0;
+        margin-left: 0;
+        width: 100%;
+    }
+       
+    #dinnerchoicewrapper {
+        display: block;
+        margin-bottom: 2vw;
+    }
+        
+    #dinnerchoicewrapper input {
+        margin-right: 10vw;
+        margin-left: 5vw;
+        width: 12vw;   
+    }
+        
+    #dinnerchoicewrapper  p {
+        margin-top: 1vw;
+        font-size: 3.5vw;
+    }
+        
+    #dinnerchoicewrapper label {
+        font-size: 4vw;
+        text-decoration: underline;
+    }
+
+    #guests h4 {
+        font-size: 5vw;
+        text-align: center;
+        margin-top: 2vw;
+        margin-bottom: 3vw;
+    }
+    
+    .checkbox {
+        width: 20vw;
+    }
+        
+    .submit {
+        margin: 0;
+        margin-top: 5vw;
+        width: 100%;
+        height: 10vw;
+        font-size: 7vw;
+    }
+
+    #dclabel {
+        font-size: 2.5vw;
+        margin-top: 8vw;
+    }
+        
+    #guests textarea {
+        width: 100%;
+        margin-top: 5vw;
+        height: 30vw;
+        font-size: 5vw;
+    }
+        
+    .choice {
+        margin-bottom: 8vw;
+    }
+        
+    #hotel {
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+        padding-right: 3vw;
+        padding-left: 3vw;
+    }
+        
+    #hotel h3 {
+        font-size: 6vw;
+        text-align: center;
+    }
+        
+    #hotel p {
+        margin-top: 2vw;
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    footer {
+        width: 100%;
+        background-color:black;
+        display: block;
+        justify-content: space-between;
+        color: white;
+        padding: 4vw;
+        background-image: url(/imgs/footer.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .footer {
+        width: 100%;
+        text-align: center;
+        height: auto;
+        padding: 0; 
+    }
+
+    .footer h1 {
+        font-size: 7vw;
+        margin-bottom: 5vw;
+    }
+        
+    .footer p {
+        font-size: 4vw;
+        margin-bottom: 5vw;
+    }
+
+    footer img {
+        display: none;
+    }
+        
+    .thankyou {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    }
+    
+      
+    
+   
+  
+    
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
